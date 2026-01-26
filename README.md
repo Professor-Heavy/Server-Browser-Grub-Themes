@@ -1,10 +1,10 @@
-# Server-Browser-Grub-Themes
+# Server Browser Grub Themes
 A collection of GRUB themes themed around Valve's server browser.
 
 > [!WARNING]
-> As the project is currently in alpha, the implementation is currently poor. It strictly only supports the `1920x1080` resolution. Resolution support can be confirmed by using `videoinfo` in the GRUB command shell.
+> As the project is currently in alpha, the implementation is currently poor. It strictly only supports the `1920x1080` resolution, although close resolutions are also possible. Resolution support can be confirmed by using `videoinfo` in the GRUB command shell.
 >
-> If supported, use `GRUB_GFXMODE=1920x1080x32` to set your resolution. Please see the [GNU GRUB manual's section on configuration setup and generation](https://www.gnu.org/software/grub/manual/grub/html_node/Simple-configuration.html) for more information.
+> If supported, use `GRUB_GFXMODE=1920x1080x32` to set your resolution. Please see the [GNU GRUB manual's section on configuration setup and generation](https://www.gnu.org/software/grub/manual/grub/html_node/Simple-configuration.html) for more information. If unsupported, the only current theme will still work, but will scale much worse than intended.
 
 > [!NOTE]
 > Because of the nature of having multiple server browser themes, this will be a gradual project, developed over time with additional variations with different Valve games and features in mind. There may be issues, but none will be severe.
