@@ -1,0 +1,56 @@
+#General settings
+title-text:""
+message-color: "#c8bca2"
+terminal-box: "terminal_box_*.png"
+terminal-font: "Verdana Regular 10" #Yes this looks unpleasant, and there will be fix.
+desktop-image: "background.png" 
+terminal-width: "70%"
+terminal-height: "70%"
+
+#Boot Menu
++ boot_menu {
+	left = 1%-11
+	width = 100%-19
+	top = 9%+2
+	height = 75%+1
+	item_font = "Verdana Regular 10"
+	item_color = "#c8bca2"
+	selected_item_color= "#231f1c"
+	selected_item_pixmap_style = "selection_*.png"
+	menu_pixmap_style = "menu_pixmap_*.png"
+	item_height = 15
+	item_padding = 0
+	item_spacing = 3
+	item_icon_space = 15 #Soon!
+#Just in case you're mad enough to have enough to fill the entire screen...
+	scrollbar = true
+	scrollbar_width = 17
+	scrollbar_frame = "scrollframe_*.png"
+	scrollbar_thumb = "scrollthumb_*.png"
+}
+
+#Keymap Text
++ label {
+	top = 100%-25
+	left = 0
+	width = 100%
+	height = 20
+	text = "@KEYMAP_MIDDLE@"
+	align = "center"
+	font = "Verdana Regular 14"
+	color = "#FFFFFF"
+}
+
+#Progress Bar
++ progress_bar {
+	id = "__timeout__"
+	left = 15%
+	top = 91%
+	height = 10
+	width = 70%
+	font = "Verdana Regular 12"
+	text_color = "#fff"
+	fg_color = "#231f1c"
+	bg_color = "#c8bca2"
+	text = "@TIMEOUT_NOTIFICATION_LONG@"
+}
