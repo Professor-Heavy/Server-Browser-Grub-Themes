@@ -3,31 +3,8 @@ title-text:""
 message-color: "#c8bca2"
 terminal-box: "terminal_box_*.png"
 terminal-font: "Verdana Regular 10" #Yes this looks unpleasant, and there will be fix.
-desktop-image: "background.png" 
 terminal-width: "70%"
 terminal-height: "70%"
-
-#Boot Menu
-+ boot_menu {
-	left = 1%-11
-	width = 100%-19
-	top = 9%+2
-	height = 75%+1
-	item_font = "Verdana Regular 10"
-	item_color = "#c8bca2"
-	selected_item_color= "#231f1c"
-	selected_item_pixmap_style = "selection_*.png"
-	menu_pixmap_style = "menu_pixmap_*.png"
-	item_height = 15
-	item_padding = 0
-	item_spacing = 3
-	item_icon_space = 15 #Soon!
-#Just in case you're mad enough to have enough to fill the entire screen...
-	scrollbar = true
-	scrollbar_width = 17
-	scrollbar_frame = "scrollframe_*.png"
-	scrollbar_thumb = "scrollthumb_*.png"
-}
 
 #Keymap Text
 + label {
@@ -39,6 +16,291 @@ terminal-height: "70%"
 	align = "center"
 	font = "Verdana Regular 14"
 	color = "#FFFFFF"
+}
+
+#Window Title
++ label {
+	top = 11
+	left = 15
+	text = "Operating Systems"
+	align = "left"
+	font = "Verdana Regular 15"
+	color = "#beb6a4"
+}
+
+#Header Icons
++ image {
+	top = 81
+	left = 9
+	file = "column_headers49x17.png"
+}
+
+#Header Text
++ label {
+	top = 83
+	left = 62
+	text = "Operating System (0 blacklisted)"
+	align = "left"
+	font = "Verdana Regular 10"
+	color = "#231f1c"
+}
+
+#Loader Label
++ label {
+	top = 100%-157
+	left = 26
+	text = "Loader"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Loader Combo Box Text
++ label {
+	top = 100%-157
+	left = 78
+	text = "GRand Unified Boot..."
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#847a68"
+}
+
+#Loader Combo Box
++ image {
+	top = 100%-161
+	left = 72
+	file = "combobox_164x24.png"
+}
+
+#Drive Label
++ label {
+	top = 100%-127
+	left = 34
+	text = "Drive"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Drive Text Box
++ image {
+	top = 100%-131
+	left = 72
+	file = "textbox_164x24.png"
+}
+
+#File System Label
++ label {
+	top = 100%-157
+	left = 249
+	text = "File System"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#File System Combo Box
++ image {
+	top = 100%-161
+	left = 323
+	file = "combobox_112x24.png"
+}
+
+#Partition Label
++ label {
+	top = 100%-127
+	left = 269
+	text = "Partition"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Partition Combo Box
++ image {
+	top = 100%-131
+	left = 323
+	file = "combobox_112x24.png"
+}
+
+#Simplified List Label
++ label {
+	top = 100%-63
+	left = 60
+	text = "Simplified list"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Simplified List Check Box
++ image {
+	top = 100%-60
+	left = 40
+	file = "checkbox_12x12.png"
+}
+
+#Filters Label
++ label {
+	top = 100%-63
+	left = 170
+	text = "Filters"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Filters Border
++ image {
+	top = 100%-66
+	left = 162
+	file = "borderedlabel_108x24.png"
+}
+
+#Filters Second Label
++ label {
+	top = 100%-63
+	left = 280
+	text = "GRand Unified Bootloader;"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Check 1 Label
++ label {
+	top = 100%-158
+	left = 465
+	text = "Unbootable partition"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Check 1 Check Box
++ image {
+	top = 100%-156
+	left = 446
+	file = "checkbox_12x12.png"
+}
+
+#Check 2 Label
++ label {
+	top = 100%-137
+	left = 465
+	text = "Is not password protected"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Check 2 Check Box
++ image {
+	top = 100%-135
+	left = 446
+	file = "checkbox_12x12.png"
+}
+
+#Check 3 Label
++ label {
+	top = 100%-116
+	left = 465
+	text = "Removable"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#c9bda4"
+}
+
+#Check 3 Check Box
++ image {
+	top = 100%-114
+	left = 446
+	file = "checkbox_12x12.png"
+}
+
+#Text 1
++ label {
+	top = 52
+	left = 14
+	text = "Windows"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#d3d3d3"
+}
+
+#Button 1
++ image {
+	top = 48
+	left = 8
+	file = "button_75x25.png"
+}
+
+#Text 2
++ label {
+	top = 52
+	left = 90
+	text = "MacOS"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#d3d3d3"
+}
+
+#Button 2
++ image {
+	top = 48
+	left = 84
+	file = "button_60x25.png"
+}
+
+#Text 3
++ label {
+	top = 52
+	left = 153
+	text = "Linux"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#d3d3d3"
+}
+
+#Button 3
++ image {
+	top = 48
+	left = 145
+	file = "button_60x25.png"
+}
+
+#Text 4
++ label {
+	top = 52
+	left = 212
+	text = "systemd-boot"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#d3d3d3"
+}
+
+#Button 4
++ image {
+	top = 48
+	left = 206
+	file = "button_125x25.png"
+}
+
+#Text 5
++ label {
+	top = 52
+	left = 333
+	text = "GRUB"
+	align = "left"
+	font = "Verdana Regular 13"
+	color = "#ffffff"
+}
+
+#Button 5
++ image {
+	top = 46
+	left = 327
+	file = "button_selected_50x27.png"
 }
 
 #Progress Bar
@@ -53,4 +315,25 @@ terminal-height: "70%"
 	fg_color = "#231f1c"
 	bg_color = "#c8bca2"
 	text = "@TIMEOUT_NOTIFICATION_LONG@"
+}
+
+#Boot Menu
+#Must be specified last so that everything else can be drawn on top.
++ boot_menu {
+	width = 100%
+	height = 100%
+	item_font = "Verdana Regular 10"
+	item_color = "#c8bca2"
+	selected_item_color= "#231f1c"
+	selected_item_pixmap_style = "selection_*.png"
+	menu_pixmap_style = "menu_pixmap_*.png"
+	item_height = 13
+	item_padding = 0
+	item_spacing = 3
+	item_icon_space = 20 #Soon!
+#Just in case you're mad enough to have enough to fill the entire screen...
+	scrollbar = true
+	scrollbar_width = 17
+	scrollbar_frame = "scrollframe_*.png"
+	scrollbar_thumb = "scrollthumb_*.png"
 }
