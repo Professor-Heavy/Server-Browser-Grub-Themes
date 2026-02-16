@@ -310,7 +310,7 @@ terminal-height: "70%"
 	top = 91%
 	height = 10
 	width = 70%
-	font = "Verdana Regular 12"
+	font = "Verdana Regular 13"
 	text_color = "#fff"
 	fg_color = "#231f1c"
 	bg_color = "#c8bca2"
